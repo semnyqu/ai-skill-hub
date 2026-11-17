@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "repository": {
+    "name": "ai-skill-hub",
+    "source_policy": "single-source-of-truth",
+    "source_directory": "~/.agents/skills",
+    "distribution": "copy",
+    "management_scope": "global"
+  },
+  "targets": [
+    {
+      "id": "agents",
+      "path": "~/.agents/skills",
+      "adapter": "agents-skill",
+      "enabled": true
+    },
+    {
+      "id": "opencode",
+      "path": "~/.config/opencode/skills",
+      "adapter": "agents-skill",
+      "enabled": true
+    }
+  ],
+  "skills": [
+    {
+      "name": "需求开发入口",
+      "version": "1.0.0",
+      "category": "workflow",
+      "source": "repository",
+      "targets": [
+        "agents",
+        "opencode"
+      ],
+      "status": "managed"
+    },
+    {
+      "name": "brainstorming",
+      "version": "1.0.0",
+      "category": "workflow",
+      "source": "repository",
+      "targets": [
+        "agents",
+        "opencode"
+      ],
+      "status": "managed"
+    },
+    {
+      "name": "executing-plans",
+      "version": "1.0.0",
+      "category": "workflow",
+      "source": "repository",
+      "targets": [
+        "agents",
+        "opencode"
+      ],
+      "status": "managed"
+    },
+    {
+      "name": "systematic-debugging",
+      "version": "1.0.0",
+      "category": "quality",
+      "source": "repository",
+      "targets": [
+        "agents",
+        "opencode"
+      ],
+      "status": "managed"
+    },
+    {
+      "name": "test-driven-development",
+      "version": "1.0.0",
+      "category": "quality",
+      "source": "repository",
+      "targets": [
+        "agents",
+        "opencode"
+      ],
+      "status": "managed"
+    },
+    {
+      "name": "using-superpowers",
+      "version": "1.0.0",
+      "category": "core",
+      "source": "repository",
+      "targets": [
+        "agents",
+        "opencode"
+      ],
+      "status": "managed"
+    },
+    {
+      "name": "verification-before-completion",
+      "version": "1.0.0",
+      "category": "quality",
+      "source": "repository",
+      "targets": [
+        "agents",
+        "opencode"
+      ],
+      "status": "managed"
+    },
+    {
+      "name": "writing-plans",
+      "version": "1.0.0",
+      "category": "workflow",
+      "source": "repository",
+      "targets": [
+        "agents",
+        "opencode"
+      ],
+      "status": "managed"
+    },
+    {
+      "name": "prd-to-fsd",
+      "version": "1.0.0",
+      "category": "workflow",
+      "source": "repository",
+      "targets": [
+        "agents",
+        "opencode"
+      ],
+      "status": "managed"
+    },
+    {
+      "name": "fsd-readiness-check",
+      "version": "1.0.0",
+      "category": "quality",
+      "source": "repository",
+      "targets": [
+        "agents",
+        "opencode"
+      ],
+      "status": "managed"
+    },
+    {
+      "name": "effect",
+      "version": "1.0.0",
+      "category": "domain",
+      "source": "repository",
+      "targets": [
+        "agents",
+        "opencode"
+      ],
+      "status": "managed"
+    }
+  ]
+}
