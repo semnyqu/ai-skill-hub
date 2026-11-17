@@ -23,7 +23,7 @@
 
 版本 `1.0.0` 是本仓库首次纳管版本标记，不代表上游发布版本。之后按 Skill 独立升版并记录变更。
 
-仓库另含 `需求开发入口` 编排 Skill。它将模糊需求路由到 brainstorming，将已有 PRD 路由到 prd-to-fsd 和 fsd-readiness-check，并按准入结果进入 writing-plans、实施、TDD、调试和交付验证。
+仓库另含 `requirement-development`（需求开发入口）编排 Skill。它先识别需求模块，定向检索项目知识库并对照代码证据，再将模糊需求路由到 brainstorming，将已有 PRD 路由到 prd-to-fsd 和 fsd-readiness-check，并按准入结果进入 writing-plans、实施、TDD、调试和交付验证。
 
 ## 手工分发约定
 
